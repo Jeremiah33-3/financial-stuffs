@@ -75,3 +75,26 @@ Key components:
 - cash generation
 - application and source of funding
 - short term liquidity and long term viability
+
+### Items that link the statements together
+
+#### Net income & retained earnings
+> - Net income from the bottom of the income statement links the retained earnings/accumulated profits on the cash flow statement and balance sheet.
+
+#### PP&E, Depreciation, Capex
+> - Depreciation and other capitalized expenses on the income statement will be added back to net income to calculate cash flow from operations.
+> 
+> - Depreciation flows out of the balance sheet (PP&E) onto the income statement as an expense.
+
+#### Working capital
+> - Changes in WC on balance sheet are related to revenues and expenses on the income statement (recognised revenues and expenses)
+> 
+> - changes in WC will be adjusted on the cash flow statement to reflect the actual amount of cash received or spent, via operating cash flow (less change in WC)
+
+#### Cash balance
+> ending cash balance comes from balance sheet as current asset at the reporting date = result of the cash flow statement (opening cash plus net cash from operating, investing, and financing activities equals ending cash)
+
+#### Dividends
+> Dividends on statement of changes in equity as a deduction from retained earnings for the period --> ❗dividends paid in cash, total appears in the financing activities section of the cash flow statement as "dividends paid", reducing cash.
+
+## Excel
