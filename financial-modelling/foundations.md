@@ -146,11 +146,21 @@ Key components:
 #### Statements in model
 | Statement | Fin. reporting view | Analysts view |
 | :--- | :--- | :--- |
-| Income Statement | ![Template](https://templatelab.com/wp-content/uploads/2016/09/Income-Statement-Template-17.jpg) | ![IS](images/IS.png) |
+| Income Statement | ![Template](https://templatelab.com/wp-content/uploads/2016/09/Income-Statement-Template-17.jpg) | ![IS](images/ IS.png) |
 | BS | ![Template](https://tse3.mm.bing.net/th/id/OIP.iTA9QJ6AVzttL3v-12q6ZgHaGl?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3) | ![BS](images/BS.png) |
 | CFS | ![Template](https://tse3.mm.bing.net/th/id/OIP.n4WPA7QdBlnDIiseNNhLBAHaGs?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3) | ![CFS](images/CFS.png) |
 
-In sum, 
+In sum, generally, here are the key differences:
+_Income Statement_
+- Expenses might be elaborated and ordered accordingly for financial purposes
+  - e.g. Revenue - COGS/COS = Gross profit - all operating expenses = operating income (EBIT) - interest = EBT - tax = net income
+  - EBIT + Depreciation (PPE + ROU assets, right-of-use) + Amortization = EBITDA
+_Balance Sheet_
+- equity is separated our for analysing
+_Cashflow statement_
+- might separate interest into interest paid on lease liabilities and general
+- combining proceeds and purchase of PPE into net purchase of PPE
+- a column recording cash available/required before debt
 
 #### Key Assumptions
 1. Revenue growth: Revenue assumptions are critical as they project expected sales, influencing overall business forecasts significantly
