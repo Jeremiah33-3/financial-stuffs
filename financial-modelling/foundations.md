@@ -155,8 +155,10 @@ _Income Statement_
 - Expenses might be elaborated and ordered accordingly for financial purposes
   - e.g. Revenue - COGS/COS = Gross profit - all operating expenses = operating income (EBIT) - interest = EBT - tax = net income
   - EBIT + Depreciation (PPE + ROU assets, right-of-use) + Amortization = EBITDA
+
 _Balance Sheet_
 - equity is separated our for analysing
+
 _Cashflow statement_
 - might separate interest into interest paid on lease liabilities and general
 - combining proceeds and purchase of PPE into net purchase of PPE
@@ -178,3 +180,19 @@ Discounted Cash Flow (DCF) analysis projects future cash flows, discounted back 
 
 3. Sensitivity analysis
 Sensitivity analysis examines how changes in key assumptions impact model outcomes, revealing risks and opportunities, empowering stakeholders to make data-driven decisions and adjust strategies accordingly.
+
+#### Key concepts
+
+- Revenues/Expense projection
+
+Based on forecast model with growth rate assumptions for revenues and assumptions for expense
+
+- Capital expenditure (CAPEX)
+
+• Funds used by company to acquire, upgrade or maintain physical assets like property, equipment, or machinery
+• Forecasting growth: Capex for new equipment, expansion of facilities etc.
+• Depreciation impact:  To be factored into the model to account for the loss in value of these assets over time
+• Financing of capex : whether the Capex will be financed through equity, debt or internally generated cash flow important assumption to consider
+• To make: capital expenditure assumptions, set up capital expenditure and depreciation schedule
+
+- 
