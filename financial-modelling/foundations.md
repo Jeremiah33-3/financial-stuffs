@@ -1,6 +1,8 @@
 ## Table of Content
 - [Importance of Financial Modelling](#importance-of-Financial-Modelling)
 - [Financial Statements](#Financial-Statements)
+- [Excel](#Excel)
+- [Building the model](#Building-the-model)
 
 
 ***
@@ -98,3 +100,71 @@ Key components:
 > Dividends on statement of changes in equity as a deduction from retained earnings for the period --> ❗dividends paid in cash, total appears in the financing activities section of the cash flow statement as "dividends paid", reducing cash.
 
 ## Excel
+
+### Formatting tips
+1.  Use consistent font styles
+2.  Apply colour coding for categories
+3.  Adjust cell sizes for visibility
+4.  Learning shortcuts can significantly enhance productivity, making your modeling process quicker and easier
+5. Maintain consistent number formats and alignment across all tabs.
+6. Use Format Painter to copy layout and styles.
+7. Visually separate inputs (blue) and outputs (black).
+8. Include a title and date on every sheet for clarity.
+
+### Checks and Warning Signs
+1. Always check that the Balance Sheet balances.
+2. Use simple formulas to flag errors: IF(balance_check<>0, "ERROR", "OK").
+3. Highlight check cells in red to make issues obvious.
+4. Never ignore a red flag — fix the _root cause_.
+5. Documenting logic saves confusion for future users - either create documentation sheet to record key formula logic or use excel comments for quick notes on key assumptions
+6. Audit Toolbar helps to trace cell linkages
+
+### Best practises for formulae
+1. Keep formulas short and simple — no 'monster formulas'.
+2. Maintain consistent layout across worksheets.
+3. Avoid circular references (A = B + C; C = A + D).
+4. Show negatives as negatives — don’t hide losses!
+5. Don’t sum over blank rows or unused ranges
+
+## Building the model
+
+### Essential components
+
+1. Inputs
+> - include assumptions such as revenue projections, operating costs, and capital expenditures that drive the overall calculations and outputs
+
+2. Calculations
+> - link inputs to outputs, transforming inputs into meaningful data.
+> - connects various financial statements, ensuring that changes in inputs reflect accurately through profit and loss, balance sheet, and cash flow.
+
+3. Outputs
+> - key financial metrics, projections, and insights.
+> -  provide information for analysis, decision-making and strategic planning within the business.
+
+### Steps
+
+#### Statements in model
+| Statement | Fin. reporting view | Analysts view |
+| :--- | :--- | :--- |
+| Income Statement | ![Template](https://templatelab.com/wp-content/uploads/2016/09/Income-Statement-Template-17.jpg) | ![IS](images/IS.png) |
+| BS | ![Template](https://tse3.mm.bing.net/th/id/OIP.iTA9QJ6AVzttL3v-12q6ZgHaGl?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3) | ![BS](images/BS.png) |
+| CFS | ![Template](https://tse3.mm.bing.net/th/id/OIP.n4WPA7QdBlnDIiseNNhLBAHaGs?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3) | ![CFS](images/CFS.png) |
+
+In sum, 
+
+#### Key Assumptions
+1. Revenue growth: Revenue assumptions are critical as they project expected sales, influencing overall business forecasts significantly
+2. Expenses: Understanding expense assumptions helps in managing costs effectively, ensuring accurate financial projections and budgeting.
+3. Capex: Capital expenditures represent investments in long-term assets, essential for growth and maintaining operational capacity.
+4. Working capital: Working capital assumptions determine liquidity management, impacting a company's ability to meet short-term obligations efficiently
+5. Depreciation: Account for Asset Depreciation
+
+#### Model Outputs
+1. Financial ratios
+Offer valuable insights into a company's performance, helping you assess profitability, efficiency, and financial health, guiding informed investment decisions and operational improvements
+
+2. DCF overview
+Discounted Cash Flow (DCF) analysis projects future cash flows, discounted back to present value, offering a clear picture of an investment's potential value and helping to guide strategic choices
+
+3. Sensitivity analysis
+Sensitivity analysis examines how changes in key assumptions impact model outcomes, revealing risks and opportunities, empowering stakeholders to make data-driven decisions and adjust strategies accordingly.
