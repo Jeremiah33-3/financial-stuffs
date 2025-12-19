@@ -146,7 +146,7 @@ Key components:
 #### Statements in model
 | Statement | Fin. reporting view | Analysts view |
 | :--- | :--- | :--- |
-| Income Statement | ![Template](https://templatelab.com/wp-content/uploads/2016/09/Income-Statement-Template-17.jpg) | ![IS](images/ IS.png) |
+| Income Statement | ![Template](https://templatelab.com/wp-content/uploads/2016/09/Income-Statement-Template-17.jpg) | ![IS](images/IS.png) |
 | BS | ![Template](https://tse3.mm.bing.net/th/id/OIP.iTA9QJ6AVzttL3v-12q6ZgHaGl?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3) | ![BS](images/BS.png) |
 | CFS | ![Template](https://tse3.mm.bing.net/th/id/OIP.n4WPA7QdBlnDIiseNNhLBAHaGs?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3) | ![CFS](images/CFS.png) |
 
@@ -173,26 +173,57 @@ _Cashflow statement_
 
 #### Model Outputs
 1. Financial ratios
-Offer valuable insights into a company's performance, helping you assess profitability, efficiency, and financial health, guiding informed investment decisions and operational improvements
+Offer valuable insights into a company's performance, helping you assess profitability, efficiency, and financial health, guiding informed investment decisions and operational improvements.
+- Possible to use charts and trends
+- key ratios include profit margin, ROE, D/E)
 
-2. DCF overview
-Discounted Cash Flow (DCF) analysis projects future cash flows, discounted back to present value, offering a clear picture of an investment's potential value and helping to guide strategic choices
+3. DCF overview
+Discounted Cash Flow (DCF) analysis projects future cash flows, discounted back to present value, offering a clear picture of an investment's potential value and helping to guide strategic choices.
 
-3. Sensitivity analysis
+4. Sensitivity analysis
 Sensitivity analysis examines how changes in key assumptions impact model outcomes, revealing risks and opportunities, empowering stakeholders to make data-driven decisions and adjust strategies accordingly.
 
 #### Key concepts
 
 - Revenues/Expense projection
 
-Based on forecast model with growth rate assumptions for revenues and assumptions for expense
+> Based on forecast model with growth rate assumptions for revenues and assumptions for expense
 
 - Capital expenditure (CAPEX)
 
-• Funds used by company to acquire, upgrade or maintain physical assets like property, equipment, or machinery
-• Forecasting growth: Capex for new equipment, expansion of facilities etc.
-• Depreciation impact:  To be factored into the model to account for the loss in value of these assets over time
-• Financing of capex : whether the Capex will be financed through equity, debt or internally generated cash flow important assumption to consider
-• To make: capital expenditure assumptions, set up capital expenditure and depreciation schedule
+> Funds used by company to acquire, upgrade or maintain physical assets like property, equipment, or machinery
+>
+> Forecasting growth: Capex for new equipment, expansion of facilities etc.
+>
+> Depreciation impact:  To be factored into the model to account for the loss in value of these assets over time
+>
+> Financing of capex : whether the Capex will be financed through equity, debt or internally generated cash flow important assumption to consider
+>
+> To make: capital expenditure assumptions, set up capital expenditure and depreciation schedule
 
-- 
+- Working capital assumptions
+
+> 3 main items: AR, Inv, AP
+>
+> Accounts receivable turnover: How quickly the company expects to collect payments from its customer
+> - Longer receivable cycles will reduce cashflow 
+> 
+> Inventory turnover: How long it takes the company to sell its inventory
+> 
+> Accounts payable: how long it takes the company to pay its suppliers
+> 
+> If working capital changes – cash impact on operations i.e. working capital requirements
+>
+> To make: establish WC needs, find AR turnover/days sales outstanding, AP turnover/Days payable outstanding, Inv turnover/days sales in inventory
+
+- ROUA Leases & Lease liabilities
+
+> Accounting standard FRS 116 or IFRS 16
+>
+> Companies recognise lease/ rent agreements on their balance sheet as both Liabilities (Lease liabilities) and Assets (Right-of-use Assets)
+>
+> At inception of the lease:  ROU Asset $ = Lease Liabilities $
+> - Instead of recognising rent expense in the Income statement, ROUA depreciation is recognised (BUT this is a non-cash item)
+> - Lease Liabilities reduced over time through payment of the lease rental expense
+
+
