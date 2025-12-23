@@ -4,7 +4,6 @@
   - [DCF](#dcf)
   - [Precedent Transactions](#precedent-transactions)
 - [Private Firms Valuation](#private-firms-valuation)
-- [Project Appraisals Techniques](#project-appraisals-techniques)
 
 ## Key Concepts & Equations
 
@@ -114,3 +113,29 @@ To calculate ending value, find multiples from the data then find median/mean. T
 > EV (enterprise value) = Market Capitalization + Total Debt + Preferred Shares + Minority Interest − Cash and Cash Equivalents
 
 ## Private Firms Valuation
+
+To determines return from CAPM, beta of a stock/portfolio needs to be fonud. Beta measures the systematic risk or volatility of a portfolio or individual security as it compares to the market as a whole. Beta = Covariance(Ri,Rm) / Variance(Rm)
+
+Due to the lack of market data on the stock prices of private companies, it is not possible to estimate stock beta via regression of stock beta.
+
+To determines beta of private companies, there are two main approached 
+
+### industry betas
+Use the average beta of similar public companies for industry comparison. Adjust the beta of comparable companies (unlevering the levered beta) using the private company's target debt-to-equity ratio. 
+
+To find: weighted betas, weighted average D/E --> then unlever it with the Hamada Equation.
+
+### regression analysis 
+Earnings beta considers historical earnings changes against market returns as a proxy for private companies. Beta, specifically, is the slope coefficient obtained through regression analysis of the stock return against the market return. 
+
+When it is difficult to obtain reliable comparable beta, a company’s earnings beta can be used as a proxy for the levered beta. In this method, the company’s historical earnings changes are regressed against the market returns. An appropriate market index can be used as a proxy for the market. For instance, if the company is operating in the U.S. market, the S&P 500 can be used as a proxy. (Credits: [Investopedia](https://www.investopedia.com/articles/personal-finance/050515/how-calculate-beta-private-company.asp))
+
+### For publicly traded companies
+With publicly available betas: 
+`ΔSi = α + βi × ΔM + e`
+where:
+- ΔSi=change in price of stock i
+- α=intercept value of the regression
+- βi=beta of the i stock return
+- ΔM=change in the market price
+- e=residual error term
