@@ -123,12 +123,18 @@ To determines beta of private companies, there are two main approached
 ### industry betas
 Use the average beta of similar public companies for industry comparison. Adjust the beta of comparable companies (unlevering the levered beta) using the private company's target debt-to-equity ratio. 
 
-To find: weighted betas, weighted average D/E --> then unlever it with the Hamada Equation.
+To find: weighted betas, weighted average D/E --> then unlever it and relever it with the Hamada Equation.
+
+_**Details**_: we first need to find the average beta of the publicly traded companies that generate income from similar operations as the private company. This will be a proxy for the industry average levered beta. Second, we need to unlever the average beta using the average debt-to-equity (D/E) ratio for these comparable companies. The final step is to re-lever beta, using the private company’s target debt-to-equity ratio.
 
 ### regression analysis 
 Earnings beta considers historical earnings changes against market returns as a proxy for private companies. Beta, specifically, is the slope coefficient obtained through regression analysis of the stock return against the market return. 
 
+This method is especially suitable for large, listed companies operating in more than one segment, and problematic to find firm whose beta would adequately represent the business beta of the private company being valued. 
+
 When it is difficult to obtain reliable comparable beta, a company’s earnings beta can be used as a proxy for the levered beta. In this method, the company’s historical earnings changes are regressed against the market returns. An appropriate market index can be used as a proxy for the market. For instance, if the company is operating in the U.S. market, the S&P 500 can be used as a proxy. (Credits: [Investopedia](https://www.investopedia.com/articles/personal-finance/050515/how-calculate-beta-private-company.asp))
+
+Beta obtained from historical data needs to be adjusted to make sure that it reflects the company’s expected future performance. To reflect the mean-reverting feature of beta (beta tends to revert to one in the long run), we can estimate an adjusted beta via smoothing factors and mathematical equations.
 
 ### For publicly traded companies
 With publicly available betas: 
