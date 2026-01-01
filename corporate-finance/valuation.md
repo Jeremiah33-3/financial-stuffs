@@ -64,6 +64,17 @@ For valuation and WACC, the relevant measure is usually the after‑tax cost of 
 
 ## Valuation Techniques
 
+Valuation from these techniques gave the firm value or enterprise value (EV) - Value of the whole capital structure, net of cash. Market capitalisation, on the other hand, encapsulates the equity slice only.
+
+> [!NOTE]
+> EV (enterprise value) = Market Capitalization (market value of equity) + Total Debt + Preferred Shares + Minority Interest − Cash and Cash Equivalents
+> - Intuition: what an acquirer would need to pay to obtain the operating business, assuming they also assume its debt, net of excess cash.
+>
+> Market capitalisation = number of common shares outstanding × current share price
+> - market value of common equity, it ignores debt, preferred stock, minorities, and cash.
+>
+> In strict cop fin language, firm value = MV of equity + debt (and other capital claims). firm value = market value if every component is taken at market prices.
+
 ### DCF
 
 > Discounted cash flow analysis helps to determine the value of an investment based on its future cash flows.
@@ -108,9 +119,6 @@ Both are relative valuation methods which use multiples, but one looks at deal p
 | Best use for M&A, fairness opinions, takeover bids. | Best use for IPOs, equity research, benchmarking, “public market” view. |
 
 To calculate ending value, find multiples from the data then find median/mean. The ending value triangulates these ranges into a "football field" chart showing low/high bounds, often with precedents yielding higher values due to control premiums. We can apply median multiples to target's metrics: e.g., `median 10x EV/EBITDA × target $150M EBITDA = $1.5B EV implied value.` For PTA, can adjusting for synergies/premiums if disclosed.
-
-> [!NOTE]
-> EV (enterprise value) = Market Capitalization + Total Debt + Preferred Shares + Minority Interest − Cash and Cash Equivalents
 
 ## Private Firms Valuation
 
