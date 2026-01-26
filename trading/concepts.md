@@ -1,11 +1,12 @@
 ***
-_Powered by Gemini_
+_Powered by Gemini and GPT_
 ***
 
 # Table of content
 - [Order Book Matching](#Order-Book-Matching)
+- [Sharpe Ratio](#Sharpe-Ratio)
 
-## Order Book Matching
+# Order Book Matching
 
 At its core, order book matching is the engine that powers stock exchanges (like Nasdaq, NYSE) and crypto exchanges. It is the automated process of pairing a buyer with a seller so a trade can happen.
 
@@ -104,3 +105,105 @@ If this were FIFO: Seller Big would get everything if they arrived 1 millisecond
 The Match:The buyer's order of 100 contracts is split:
 - Seller Big sells 80 contracts (80% of the buy order).
 - Seller Small sells 20 contracts (20% of the buy order).
+
+# Sharpe Ratio
+
+The **Sharpe Ratio** is one of the most widely used measures of **risk-adjusted return**. It answers a simple but fundamental question:
+
+> *How much excess return am I receiving for each unit of risk I take?*
+
+Formally, the Sharpe Ratio is defined as:
+
+$$
+\text{Sharpe Ratio} = \frac{E[R_p] - R_f}{\sigma_p}
+$$
+
+where:
+
+* $(E[R_p])$ = expected return of the portfolio
+* $(R_f)$ = risk-free rate
+* $(\sigma_p)$ = standard deviation of portfolio returns (volatility)
+
+---
+
+### **Economic Intuition**
+
+Raw returns alone are not meaningful without considering risk. A strategy that earns 20% annually but fluctuates wildly is not necessarily better than one earning 12% with low volatility. The Sharpe Ratio standardizes performance by penalizing volatility:
+
+* **High Sharpe Ratio** → Efficient conversion of risk into return
+* **Low Sharpe Ratio** → Poor compensation for risk
+
+In practical terms:
+
+* Sharpe ≈ 0.5 → weak
+* Sharpe ≈ 1.0 → good
+* Sharpe ≈ 2.0 → very good
+* Sharpe ≥ 3.0 → exceptional
+
+In institutional investing, a Sharpe above 1 is typically considered investable, while many top hedge funds target Sharpe ratios above 1.5–2 over long horizons.
+
+---
+
+### **Why Volatility Is Treated as Risk**
+
+The Sharpe Ratio assumes investors dislike **variability of outcomes**, regardless of direction. Both large gains and large losses increase volatility, so both are treated as “risk.” This is a simplification, but it makes the metric mathematically convenient and broadly applicable.
+
+This assumption works reasonably well for:
+
+* Market-neutral strategies
+* Statistical arbitrage
+* Factor portfolios
+* Long-only funds
+
+But it can misrepresent risk for strategies with skewed or fat-tailed distributions.
+
+---
+
+### **Sharpe Ratio and Portfolio Construction**
+
+Sharpe Ratio plays a central role in optimization. If we assume returns are approximately normally distributed and investors care only about mean and variance, then:
+
+> Maximizing Sharpe Ratio ≡ Finding the tangency portfolio in mean–variance space.
+
+This is the portfolio that lies on the efficient frontier with the highest slope relative to the risk-free rate.
+
+In quantitative trading, many optimizers directly aim to maximize expected Sharpe:
+
+$$
+\max_w \frac{w^T \mu}{\sqrt{w^T \Sigma w}}
+$$
+
+where:
+
+* $(w)$ = portfolio weights
+* $(\mu)$ = expected returns
+* $(\Sigma)$ = covariance matrix
+
+---
+
+### **Sharpe Ratio in Market-Neutral Strategies**
+
+For market-neutral or factor-neutral strategies:
+
+* Market beta ≈ 0
+* Industry beta ≈ 0
+* Other factor betas ≈ 0
+
+Since systematic risk is stripped away, **most remaining volatility comes from idiosyncratic noise**, not rewarded risk premia. Therefore, a high Sharpe Ratio is interpreted as strong evidence of genuine alpha.
+
+This is why hedge funds often emphasize Sharpe more than raw returns.
+
+---
+
+### **Limitations**
+
+* Penalizes upside volatility
+* Assumes normality
+* Sensitive to estimation error
+* Can be inflated by smoothing or illiquid assets
+
+Despite these weaknesses, Sharpe remains the industry’s first-pass metric.
+
+### **Key Takeaway**
+
+The Sharpe Ratio measures **skill per unit of uncertainty**. It tells us how efficiently a strategy transforms risk into excess return, making it the cornerstone of quantitative performance evaluation.
